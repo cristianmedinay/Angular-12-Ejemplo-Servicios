@@ -1,0 +1,27 @@
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      name="nombre"
+      [(ngModel)]="nombre"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">apellido</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputPassword1"
+      name="apellido"
+      [(ngModel)]="apellido"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="enviar()">
+    Enviar
+  </button>
+</form>
+<p></p>
